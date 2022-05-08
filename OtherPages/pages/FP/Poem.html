@@ -1,0 +1,48 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="../../AllInOne.css">
+</head>
+
+<body>
+
+
+	<table>
+		<tr>
+			<td>
+				<div style="margin:10;">
+					<div class="poem-title">Poem fragment of the day,
+						<div id="Date"></div>
+					</div>
+
+					<div style="text-align:left; padding: 48px 0; line-height: 48px;background-color:bisque;">
+						"There is shadow under this red rock,<br>
+						(Come in under the shadow of this red rock),<br>
+						And I will show you something different from either<br>
+						Your shadow at morning striding behind you<br>
+						Or your shadow at evening rising to meet you;<br>
+						I will show you fear in a handful of dust".<p>
+					</div>
+					<div style="text-align:right;background-color:bisque;">-The Wasteland, T.S.Elliot.</div>
+
+
+				</div>
+			</td>
+		</tr>
+	</table>
+	<script>
+		const today = new Date();
+		let m = today.getMonth() + 1;
+		let d = today.getDate();
+		let y = today.getFullYear();
+
+		document.getElementById("Date").innerHTML = m + '-' + d + '-' + y;
+
+		console.log(m);
+		console.log(d);
+		console.log(y);
+	</script>
+
+</body>
+
+</html>
